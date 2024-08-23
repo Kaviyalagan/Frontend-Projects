@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastra</title>
+
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="popupbox">
+        <p>Sign UP and Get 20% OFF for your first Order</p>
+        <i class="fa-solid fa-xmark" id="icon"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nastra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="#new-arrival">New Arrival</a></p>
+            <p class="navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact us</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side-Navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="#new-arrival">New Arrival</a></p>
+            <p class="navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact us</a></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div>
+            <h1>Level up your style</h1>
+            <p>with our stunning collctions</p>
+            <button class="header-button">Shop Now</button>
+        </div>
+
+        <div>
+            <img class="header-image" style="width: 490px; height: 290px;" src="images/i1.png" alt="">
+        </div>
+    </div>
+
+    <!-- Slider -->
+
+    <div class="slider">
+        <div class="images">
+            <div class="image">
+                <h1 class="left-btn1"> <i class="fa-solid fa-angle-left"></i></h1>
+                <img src="images/s1.avif" alt="" width="100%" height="350px">
+                <h1 class="right-btn1"> <i class="fa-solid fa-angle-right"></i></h1>
+            </div>
+            <div class="image">
+                <h1 class="left-btn2" style="color: black;"> <i class="fa-solid fa-angle-left"></i></h1>
+                <img src="images/s22.jpg" alt="" width="100%" height="350px" style="z-index: -20; opacity: 0.8;">
+                <h1 class="right-btn2" style="color: black;"> <i class="fa-solid fa-angle-right"></i></h1>
+            </div>
+            <div class="image">
+                <h1 class="left-btn3" style="color: black;"> <i class="fa-solid fa-angle-left"></i></h1>
+                <img src="images/s3.avif" alt="" width="100%" height="350px" style="z-index: -20; opacity: 0.8;">
+                <h1 class="right-btn3" style="color: black;"> <i class="fa-solid fa-angle-right"></i></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Service -->
+
+    <div class="service">
+        <div class="service-container-1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+
+            <div>
+                <p>|| We ensure that our customer have the best Shopping Experience</p>
+            </div>
+        </div>
+
+        <div class="service-container-2">
+            <div class="A1">
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nemo id quis consequatur aliquam
+                    aliquid earum atque soluta quas sint.</p>
+            </div>
+
+            <div class="A1">
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>New Arrival</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nemo id quis consequatur aliquam
+                    aliquid earum atque soluta quas sint.</p>
+            </div>
+
+            <div class="A1">
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>Fast and Free Shipping</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nemo id quis consequatur aliquam
+                    aliquid earum atque soluta quas sint.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mar">
+        <p>
+            <marquee behavior="" direction="">BIG SALES STARTS SOON!!! UPTO 75% OFFER</marquee>
+        </p>
+    </div>
+
+    <!-- New Arrival -->
+
+    <div id="new-arrival">
+        <h2 style="padding: 20px;">New Arrival</h2>
+    </div>
+
+    <div class="new-arrival">
+        <div class="new-arrival-container">
+            <img src="images/i9.webp" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="images/i7.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="images/i0.webp" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="new-arrival-container">
+            <img src="images/i3.webp" alt="" style="background-color: grey;">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    <!-- Most Wanted -->
+
+    <div id="most-wanted">
+        <h2 style="padding: 20px;">Most Wanted</h2>
+    </div>
+
+    <div class="most-wanted">
+        <div class="most-wanted-container">
+            <img src="images/i16.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="most-wanted-container">
+            <img src="images/i11.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="most-wanted-container">
+            <img src="images/i14.webp" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="most-wanted-container">
+            <img src="images/i12.jpg" alt="">
+            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+
+    <!-- News -->
+
+    <div class="news">
+        <h2>Join Our News Letter</h2>
+        <p>Signup our email newsletter to get exclusive discounts and updates and more</p>
+
+        <div>
+            <input type="text" class="search">
+        </div>
+
+        <div>
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">Nostra</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit eius dolorum deserunt ipsum
+                    repudiandae? Iure minus dignissimos sed aliquam suscipit laborum, repudiandae quasi error?
+                </p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2024Nastra.com</p>
+        <p>Ouick Links</p>
+        <ul>
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="#new-arrival">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact us</a></p>
+        </ul>
+    </div>
+
+</body>
+
+<script>
+
+    let popupbox = document.querySelector(".popupbox")
+    let xmark = document.getElementById("icon")
+    xmark.addEventListener('click', () => {
+        popupbox.style.display = "none"
+    })
+
+    var sidenav = document.querySelector(".side-navbar")
+
+    function shownavbar() {
+        sidenav.style.left = "0"
+    }
+
+    function closenavbar() {
+        sidenav.style.left = "-60%"
+
+    }
+
+    let rightbtn1 = document.querySelector(".right-btn1")
+    let rightbtn2 = document.querySelector(".right-btn2")
+    let rightbtn3 = document.querySelector(".right-btn3")
+
+    let images = document.querySelector(".images");
+    rightbtn1.addEventListener('click', () => {
+        images.style.transform = "translateX(-100vw)"
+    })
+    rightbtn2.addEventListener('click', () => {
+        images.style.transform = "translateX(-200vw)"
+    })
+    rightbtn3.addEventListener('click', () => {
+        images.style.transform = "translateX(0vw)"
+    })
+
+    let leftbtn1 = document.querySelector(".left-btn1")
+    let leftbtn2 = document.querySelector(".left-btn2")
+    let leftbtn3 = document.querySelector(".left-btn3")
+
+    leftbtn1.addEventListener('click', () => {
+        ((rightbtn3.parentElement).parentElement).style.transform = "translateX(-200vw)"
+    })
+    leftbtn2.addEventListener('click', () => {
+        ((leftbtn1.parentElement).parentElement).style.transform = "translateX(0vw)"
+    })
+    leftbtn3.addEventListener('click', () => {
+        ((leftbtn2.parentElement).parentElement).style.transform = "translateX(-100vw)"
+    })
+
+    let servicecontainer1 = document.querySelector(".service-container-1")
+    window.onscroll = () => {
+        servicecontainer1.style.left = "0"
+        limited.style.left = "0"
+    }
+
+
+</script>
+
+</html>
