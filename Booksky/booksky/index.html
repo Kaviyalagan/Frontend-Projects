@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sed rem reiciendis? Sunt modi cum, hic consectetur delectus ipsa quaerat id amet eaque necessitatibus placeat fuga consequuntur earum? Vel, consequuntur?</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book-title" id="Book-title-input">
+            <input type="text" placeholder="Book-Author" id="Book-Author-input">
+            <textarea placeholder="Short Description" id="Book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+</body>
+
+<script>
+
+    //selecting popupbox , popupoverlay , button
+
+    var popupoverlay = document.querySelector(".popup-overlay")
+    var popupbox = document.querySelector(".popup-box")
+    var addpopupbutton = document.getElementById("add-popup-button")
+
+    addpopupbutton.addEventListener("click",function(){
+        popupoverlay.style.display="block"
+        popupbox.style.display="block"
+})
+
+
+//selecting cancel button
+   var cancelpopup = document.getElementById("cancel-popup")
+
+
+   cancelpopup.addEventListener("click",function(event){
+        event.preventDefault()
+        popupoverlay.style.display="none"
+        popupbox.style.display="none"
+   })
+
+   //selecting container , add ,Book-title-input, Book-Author-input ,Book-description-input
+
+   var conatiner = document.querySelector(".container")
+   var addbook = document.getElementById("add-book")
+   var booktitleinput = document.getElementById("Book-title-input")
+   var booktauthorinput = document.getElementById("Book-Author-input")
+   var bookdescriptioninput = document.getElementById("Book-description-input")
+
+   addbook.addEventListener("click",function(event){
+       event.preventDefault()
+       var div = document.createElement("div")
+       div.setAttribute("class","book-container")
+       div.innerHTML=`<h2>${booktitleinput.value}</h2>
+            <h5>${booktauthorinput.value}</h5>
+            <p>${bookdescriptioninput.value}</p>
+            <button onclick="deletebook(event)">Delete</button>`   //template literals//
+       conatiner.append(div)
+       popupoverlay.style.display="none"
+       popupbox.style.display="none"
+   })
+
+   function deletebook(event){
+    event.target.parentElement.remove()
+   }
+</script>
+</html>
